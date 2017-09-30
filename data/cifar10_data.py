@@ -110,7 +110,7 @@ class DataLoader(object):
         # on intermediate iterations fetch the next batch
         x = self.data[self.p : self.p + n]
         y = self.labels[self.p : self.p + n]
-        self.p += self.n
+        self.p += n
 
         if self.return_labels:
             return x,y
