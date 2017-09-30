@@ -129,7 +129,7 @@ class DataLoader(object):
 
         # on intermediate iterations fetch the next batch
         x = self.data[self.p : self.p + n]
-        self.p += self.batch_size
+        self.p += self.n
 
         return x
 
