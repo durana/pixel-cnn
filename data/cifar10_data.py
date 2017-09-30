@@ -103,7 +103,7 @@ class DataLoader(object):
             self.labels = self.labels[inds]
 
         # on last iteration reset the counter and raise StopIteration
-        if self.p + n > self.data.shape[0]:
+        if self.p >= self.data.shape[0]:
             self.reset() # reset for next time we get called
             raise StopIteration
 
